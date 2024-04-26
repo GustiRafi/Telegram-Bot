@@ -32,6 +32,7 @@ Magnitude: ${Magnitude}
 Potensi: ${Potensi}
     `
     const chatFrom = callback.from.id;
+    bot.sendMessage(chatFrom,"Tunggu sebentar....")
     bot.sendLocation(chatFrom,latitude,longitude)
     bot.sendPhoto(chatFrom,image,{
         caption: result
